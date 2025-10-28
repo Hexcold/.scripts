@@ -16,7 +16,7 @@ case $COMAND in
     "listar")
         if [ ! -e "$DB" ]; then
             echo "Arquivo não encontrado!!!"
-        elif [ ! -s "$DB" ] || [ -z "$(head -n 1 "$DB")" ]; then
+        elif [ ! -s "$DB" ]; then
             echo "Arquivo vazio!!!"
         else
             cat "$DB"
